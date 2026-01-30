@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    
+    <h2>Estilizando formulários</h2>
+    <form>
+
+        <fieldset><!--Utilizado para agrupar dados semelhantes-->
+            <legend>Detalhes do contato</legend> <!--Utilizando para legendar o agrupamento de dados semelhantes-->
+
+            <div>
+                <label for="nome">Nome:</label> <!--Etiqueta ou rótulo--> <!--for é atributo e está vinculado ao id nome abaixo associando o label ao input-->
+                <input type="text" name="nome" id="nome"> <!--Também há a forma de estar vinculando envolvendo o label no input-->
+            </div>  
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email"> 
+            </div>  
+
+            <div>
+                <label for="url">URL:</label>
+                <input type="text" name="url" id="url"> 
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentários</legend>
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Lembrar de mim</legend>
+            <div>
+                <label>
+                    <input class="radio" type="radio" name="lembrar" id="sim">Sim <!--label com input envolvido-->
+                </label>
+            </div>
+
+            <div>
+                <label>
+                    <input class="radio" type="radio" name="lembrar" id="não">Não <!--label com input envolvido-->
+                </label>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

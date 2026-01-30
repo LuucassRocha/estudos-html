@@ -1,0 +1,91 @@
+h1~p{
+    color: red;
+}
+
+/*************************************
+Herança e especificidade */
+
+/*body{
+    color: red;
+    border: 1px solid black;
+}*/
+
+/*Seletores iguais, exceção important
+#pagina p {
+    color: red !important;
+}
+
+#pagina p {
+    color: blue;
+}*/
+
+/* Se um seletor for mais específico que outro
+a regra mais específica será aplicada
+(terá precedência sobre regras mais gerais)
+*/
+/*
+* {
+    color: red;
+}
+
+h2{
+    color:blue;
+}
+
+h2.verde{
+    color: green;
+}
+
+h2#amarelo{
+    color:yellow;
+}*/
+
+/*****************************
+Barra de navegação vertical */
+/*
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    padding: 5px 20px;
+    background: url(../css/imagens/seta.png) no-repeat left center;
+}*/
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul a{
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    background: #f7b600 url(../css/imagens/menu.png) no-repeat left bottom;
+
+}
+
+a:hover{
+    background-position: right bottom;
+    background-color: #f99200; /*Se caso a página não carregar a imagem*/
+    color: #fff;
+}
+
+#home #navegacao-lateral .home a, #noticias #navegacao-lateral .noticias a, #sobre #navegacao-lateral .sobre a, #contato #navegacao-lateral .contato a, #servicos #navegacao-lateral .servicos a{
+    background-position: right bottom;
+    background-color: #f99200; /*Se caso a página não carregar a imagem*/
+    color: #fff;
+}
+
+
+
+
+

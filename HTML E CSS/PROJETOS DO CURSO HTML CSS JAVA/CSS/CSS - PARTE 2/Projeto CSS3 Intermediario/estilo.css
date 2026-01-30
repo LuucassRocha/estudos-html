@@ -1,0 +1,197 @@
+/*MODELO DE CAIXA
+
+.conteudo{
+    border: 1px solid red;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    padding: 20px 15px 10px 5px
+    padding: 20px;
+
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+    margin: 20px 15px 10px 5px
+    margin: 20px;
+
+    width: 150px;
+}*/
+
+/*
+h2{
+    margin: 0px;
+}*/
+
+/*ELEMENTOS FLUTUANTES
+
+.conteudo{
+    background: gray;
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: right;
+}
+
+.estilo{
+    background: rgb(146, 112, 112);
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.conteudo1{
+    background: rgb(146, 112, 112);
+    border: 1px solid red;
+    width: 150px;
+    height: 250px;
+    margin: 10px;
+    float: left;
+}*/
+/*
+body{
+    background: #f4f4f4;
+}
+
+#principal{
+    width: 920px;
+}
+
+.noticia{
+    background: rgb(107, 107, 134);
+    padding: 5px;
+    width: 280px;
+    margin: 7px;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+.imagem-galeria{
+    background: white;
+    width: 265px;
+    padding: 5px;
+    float: left;
+    margin: 15px;
+}*/
+
+/*
+.borda{
+    border: 1px solid red;
+    display: block;
+}*/
+/*
+body{
+    background: rgb(75, 29, 29);
+}
+
+#container{
+    background: rgb(57, 114, 83);
+    width: 800px;
+    color: white;
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+}
+
+h1{
+   
+}
+
+p{
+    width: 300px;
+}
+
+.fixed{
+    border: 1px solid red;
+    background: #f2f2f2;
+    color: gray;
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    margin: 0px;
+}
+
+.absolute{
+    border: 1px solid red;
+    background: #f2f2f2;
+    color: gray;
+    position: absolute;
+    top: 80px;
+    right: 80px;    
+}
+
+.relative{
+    border: 1px solid red;
+    position: relative;
+    top, right, bottom, left 
+    top: -20px;
+    left: 80px;
+    right: 20px;
+    bottom: 30px;
+}*/
+
+/*
+.conteudo1{
+    border: 1px solid red;
+    background: orange;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+}
+
+.conteudo2{
+    border: 1px solid red;
+    background: green;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 1;
+}
+
+.conteudo3{
+    border: 1px solid red;
+    background: purple;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 160px;
+    left: 160px;
+    z-index: 0;
+}*/
+
+a{
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+/*Links não visitados*/
+a:link, a:visited{
+    color: #b9c941;
+}
+
+/*Links visitados
+a:visited{
+    color: #c0c0c0;
+}/*
+
+/*Links Hover, passa o cursor sobre o link*/
+a:hover{
+    color: #6d790f;
+    background: aquamarine;
+}
+
+/*Links ativos, quando clicado*/
+a:active{
+    color: brown;
+}

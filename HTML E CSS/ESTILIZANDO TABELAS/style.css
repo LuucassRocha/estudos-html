@@ -1,0 +1,39 @@
+/*********************************
+Estilizando tabelas */
+body{
+    font-family: "Trebouchet MS", Helvetica, sans-serif;
+}
+
+table {
+    width: 600px;
+    border-collapse: separate; /*Estilo da borda da tabela - separada ou fusão*/
+}
+
+th, td {
+    padding: 7px;
+}
+
+th {
+    text-transform: uppercase; /*troca as letras para maiusculas*/
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #111;
+    text-align: left;
+    font-size: 90%;
+    letter-spacing: 0.1em;
+}
+
+tr.alternado {
+    background-color: #efefef;
+}
+
+tr:hover {
+    background-color: #c3e6e5;
+}
+
+tr:hover.cabecalho {
+    background-color: white;
+}
+
+.numero {
+    text-align: right;
+}

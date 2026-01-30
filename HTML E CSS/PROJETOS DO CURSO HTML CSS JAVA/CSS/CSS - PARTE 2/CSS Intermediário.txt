@@ -1,0 +1,590 @@
+MODELO CAIXA AULA
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Modelo de Caixa</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    </head>
+
+    <body>
+
+        <div id="noticia">
+            <h2>Lorem ipsum dolor sit amet</h2>
+
+            <p>
+                Consectetur adipiscing elit. Vestibulum quis magna iaculis, sodales nisi quis, cursus enim. Sed euismod ac orci non pretium.
+            </p>
+
+        </div>
+
+        <!--
+        <div class="conteudo">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+
+        <div class="conteudo">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+
+        <p>Lorem Ipsum</p>
+        -->
+
+    </body>
+
+</html>
+
+(PÁGINA ESTILO CSS)
+
+/*Modelo de Caixa
+
+.conteudo{
+    border: 1px solid red;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    padding: 20px 15px 10px 5px
+    padding: 20px;
+
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+    margin: 20px 15px 10px 5px
+    margin: 20px;
+
+    width: 150px;
+}*/
+
+#noticia{
+    background: rgb(107, 107, 134);
+    width: 900px;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+h2{
+    margin: 0px;
+}
+
+-------------------------------------------------------------------------------------------------------
+ELEMENTOS FLUTUANTES
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Elementos Flutuantes</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    </head>
+
+    <body>
+
+        <div id="principal">
+
+            <div class="conteudo">
+                Conteudo 1
+            </div>
+
+            <div class="conteudo">
+                Conteudo 2
+            </div>
+
+            <div class="conteudo">
+                Conteudo 3
+            </div>
+
+            <div class="clear"></div>
+
+        </div>
+
+    </body>
+
+</html>
+
+ESTILO CSS
+
+.conteudo{
+    background: gray;
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: right;
+}
+
+.estilo{
+    background: rgb(146, 112, 112);
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.clear{
+    clear: both;
+}
+
+#principal{
+    border: 5px solid red;
+    background: green;
+}
+
+/*
+.conteudo1{
+    background: rgb(146, 112, 112);
+    border: 1px solid red;
+    width: 150px;
+    height: 250px;
+    margin: 10px;
+    float: left;
+}*/
+
+------------------------------------------------------------------------------------------------------
+ELEMENTOS FLUTUANTES NA PRÁTICA
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Elementos Flutuantes na Pratica</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    </head>
+
+    <body>
+
+        <div id="principal">
+
+            <div>
+
+                <div class="noticia">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit 1</h2>
+                    <p>
+                        Ut commodo ante sit amet condimentum tincidunt. Nunc non eleifend ex, eget laoreet diam. Integer at sem ac ex ultricies efficitur. Duis id malesuada ante, a egestas eros.
+                    </p>
+                    <a href="">Veja mais</a>
+                </div>
+
+                <div class="noticia">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit 2</h2>
+                    <p>
+                        Ut commodo ante sit amet condimentum tincidunt. Nunc non eleifend ex, eget laoreet diam. Integer at sem ac ex ultricies efficitur. Duis id malesuada ante, a egestas eros.
+                    </p>
+                    <a href="">Veja mais</a>
+                </div>
+
+                <div class="noticia">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit 3</h2>
+                    <p>
+                        Ut commodo ante sit amet condimentum tincidunt. Nunc non eleifend ex, eget laoreet diam. Integer at sem ac ex ultricies efficitur. Duis id malesuada ante, a egestas eros.
+                    </p>
+                    <a href="">Veja mais</a>
+                </div>
+
+            </div><!--Fim noticia-->
+
+            <div class="clear"></div>
+
+            <div>
+
+                <div class="imagem-galeria">
+                    <img src="imagens/imagem1.png">
+                    <p>Resumo</p>
+                </div>
+
+                <div class="imagem-galeria">
+                    <img src="imagens/imagem2.png">
+                    <p>Resumo</p>
+                </div>
+
+                <div class="imagem-galeria">
+                    <img src="imagens/imagem3.png">
+                    <p>Resumo</p>
+                </div>
+
+                <div class="imagem-galeria">
+                    <img src="imagens/imagem4.png">
+                    <p>Resumo</p>
+                </div>
+
+                <div class="imagem-galeria">
+                    <img src="imagens/imagem5.png">
+                    <p>Resumo</p>
+                </div>
+
+            </div>
+
+        </div><!--Fim principal-->
+
+    </body>
+
+</html>
+
+ESTILO CSS
+
+body{
+    background: #f4f4f4;
+}
+
+#principal{
+    width: 920px;
+}
+
+.noticia{
+    background: rgb(107, 107, 134);
+    padding: 5px;
+    width: 280px;
+    margin: 7px;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+.imagem-galeria{
+    background: white;
+    width: 265px;
+    padding: 5px;
+    float: left;
+    margin: 15px;
+}
+
+-------------------------------------------------------------------------------------------------------
+Elementos Inline-Block
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Elementos Flutuantes na Pratica</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    </head>
+
+    <body>
+
+        <!--
+            <h1 class="borda">Bloco 1</h1>
+            <h1 class="borda">Bloco 2</h1>
+        -->
+
+        <span class="borda">
+            Inline 1
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        </span>
+        
+        <span class="borda">Inline 2</span>  
+
+    </body>
+
+</html>
+
+Estilo CSS
+
+.borda{
+    border: 1px solid red;
+    display: block;
+}
+
+------------------------------------------------------------------------------------------------------
+AULA POSICIONAMENTOS
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Posicionamentos (static, relative, absolute e fixed)</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    </head>
+
+    <body>
+
+        <div id="container">
+            
+            <h1>Posicionamentos</h1>
+
+            <p>
+                P1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis vehicula tristique. Etiam mollis, quam vitae auctor elementum, tortor lacus ornare ex, ut 
+                vulputate odio justo eu libero. Phasellus auctor diam luctus arcu hendrerit accumsan
+            </p>
+
+            <p class="fixed">
+                P2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis vehicula tristique. Etiam mollis, quam vitae auctor elementum, tortor lacus ornare ex, ut 
+                vulputate odio justo eu libero. Phasellus auctor diam luctus arcu hendrerit accumsan
+            </p>
+
+            <p>
+                P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis vehicula tristique. Etiam mollis, quam vitae auctor elementum, tortor lacus ornare ex, ut 
+                vulputate odio justo eu libero. Phasellus auctor diam luctus arcu hendrerit accumsan
+            </p>
+
+            <p>
+                P4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis vehicula tristique. Etiam mollis, quam vitae auctor elementum, tortor lacus ornare ex, ut 
+                vulputate odio justo eu libero. Phasellus auctor diam luctus arcu hendrerit accumsan
+            </p>
+
+            <p>
+                P5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis vehicula tristique. Etiam mollis, quam vitae auctor elementum, tortor lacus ornare ex, ut 
+                vulputate odio justo eu libero. Phasellus auctor diam luctus arcu hendrerit accumsan
+            </p>
+
+            <p>
+                P6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis vehicula tristique. Etiam mollis, quam vitae auctor elementum, tortor lacus ornare ex, ut 
+                vulputate odio justo eu libero. Phasellus auctor diam luctus arcu hendrerit accumsan
+            </p>
+
+            <p>
+                P7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis vehicula tristique. Etiam mollis, quam vitae auctor elementum, tortor lacus ornare ex, ut 
+                vulputate odio justo eu libero. Phasellus auctor diam luctus arcu hendrerit accumsan
+            </p>
+
+            <p>
+                P8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis vehicula tristique. Etiam mollis, quam vitae auctor elementum, tortor lacus ornare ex, ut 
+                vulputate odio justo eu libero. Phasellus auctor diam luctus arcu hendrerit accumsan
+            </p>
+
+            <p>
+                P9 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis vehicula tristique. Etiam mollis, quam vitae auctor elementum, tortor lacus ornare ex, ut 
+                vulputate odio justo eu libero. Phasellus auctor diam luctus arcu hendrerit accumsan
+            </p>
+
+            <p>
+                P10 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis vehicula tristique. Etiam mollis, quam vitae auctor elementum, tortor lacus ornare ex, ut 
+                vulputate odio justo eu libero. Phasellus auctor diam luctus arcu hendrerit accumsan
+            </p>
+
+            <p>
+                P11 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis vehicula tristique. Etiam mollis, quam vitae auctor elementum, tortor lacus ornare ex, ut 
+                vulputate odio justo eu libero. Phasellus auctor diam luctus arcu hendrerit accumsan
+            </p>
+
+            <p>
+                P12 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis vehicula tristique. Etiam mollis, quam vitae auctor elementum, tortor lacus ornare ex, ut 
+                vulputate odio justo eu libero. Phasellus auctor diam luctus arcu hendrerit accumsan
+            </p>
+
+            <p>
+                P13 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis vehicula tristique. Etiam mollis, quam vitae auctor elementum, tortor lacus ornare ex, ut 
+                vulputate odio justo eu libero. Phasellus auctor diam luctus arcu hendrerit accumsan
+            </p>
+
+            <p>
+                P14 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis vehicula tristique. Etiam mollis, quam vitae auctor elementum, tortor lacus ornare ex, ut 
+                vulputate odio justo eu libero. Phasellus auctor diam luctus arcu hendrerit accumsan
+            </p>
+
+            <p>
+                P15 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis vehicula tristique. Etiam mollis, quam vitae auctor elementum, tortor lacus ornare ex, ut 
+                vulputate odio justo eu libero. Phasellus auctor diam luctus arcu hendrerit accumsan
+            </p>
+
+        </div>
+
+    </body>
+
+</html>
+
+ESTILO CSS
+
+body{
+    background: rgb(75, 29, 29);
+}
+
+#container{
+    background: rgb(57, 114, 83);
+    width: 800px;
+    color: white;
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+}
+
+h1{
+   
+}
+
+p{
+    width: 300px;
+}
+
+.fixed{
+    border: 1px solid red;
+    background: #f2f2f2;
+    color: gray;
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    margin: 0px;
+}
+
+.absolute{
+    border: 1px solid red;
+    background: #f2f2f2;
+    color: gray;
+    position: absolute;
+    top: 80px;
+    right: 80px;    
+}
+
+.relative{
+    border: 1px solid red;
+    position: relative;
+    /* top, right, bottom, left 
+    top: -20px;
+    left: 80px;
+    right: 20px;*/
+    bottom: 30px;
+}
+
+-------------------------------------------------------------------------------------------------------
+AULA SOBREPOSIÇÃO DE ELEMENTOS
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Sobrepondo elementos</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    </head>
+
+    <body>
+
+        <div class="conteudo1">
+            Conteudo 1
+        </div>
+
+        <div class="conteudo2">
+            Conteudo 2
+        </div>
+
+        <div class="conteudo3">
+            Conteudo 3
+        </div>
+    </body>
+
+</html>
+
+ESTILO CSS
+
+.conteudo1{
+    border: 1px solid red;
+    background: orange;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+}
+
+.conteudo2{
+    border: 1px solid red;
+    background: green;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 1;
+}
+
+.conteudo3{
+    border: 1px solid red;
+    background: purple;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 160px;
+    left: 160px;
+    z-index: 0;
+}
+
+-------------------------------------------------------------------------------------------------------
+AULA FORMATAÇÃO DE LINKS
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Links</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    </head>
+
+    <body>
+
+        <a href="https://www.google.com">Google</a> |
+
+        <a href="https://www.tecmundo.com.br">TecMundo</a> |
+
+        <a href="https://www.youtube.com">YouTube</a> |
+
+        <a href="https://www.njotdsklajhciasofnei.com">Beattles</a> |
+
+        <a href="https://www.megacurioso.com.br">Mega Curioso</a> 
+
+    </body>
+
+</html>
+
+ESTILO CSS
+
+a{
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+/*Links não visitados*/
+a:link, a:visited{
+    color: #b9c941;
+}
+
+/*Links visitados
+a:visited{
+    color: #c0c0c0;
+}/*
+
+/*Links Hover, passa o cursor sobre o link*/
+a:hover{
+    color: #6d790f;
+    background: aquamarine;
+}
+
+/*Links ativos, quando clicado*/
+a:active{
+    color: brown;
+}
+
+-------------------------------------------------------------------------------------------------------

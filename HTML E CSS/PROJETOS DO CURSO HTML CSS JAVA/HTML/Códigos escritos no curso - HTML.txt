@@ -1,0 +1,284 @@
+Códigos escritos no curso:
+
+<!doctype html> 
+
+<html>
+
+    <head>
+        <title>Meu site</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        
+        <h2>A empresa</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis diam augue, pretium at nisi in, vestibulum posuere neque.</p>
+        <hr>
+
+        <h2>Vantagens de ser cliente</h2>
+        <!-- Lista ordenada: 1, A, a, I, i-->
+        <ol type="1">
+            <li>Atendimento <strong>rápido</strong></li>
+            <li>Preços especiais</li>
+            <li>Muitas cidades</li>
+        </ol>
+        <hr>
+
+        <h2>O que os clientes estão dizendo</h2>
+        <em>"Gostei demais do atendimento, foi muito rápido e com certeza irei voltar!"</em> <br>
+        <strong>Maria Almeida</strong>
+        <hr>
+
+        <h2>Mapa do site</h2>
+        <!-- Lista não ordenada: Circle, Square, Disc-->
+        <ul type="disc">
+            <li>Home</li>
+            <li>Quem Somos</li>
+            <li>Contato</li>
+        </ul>
+
+    </body>
+
+</html>
+
+---------------------------------------------------------------------------------------------------
+AULA IMAGEM
+
+<!doctype html> 
+
+<html>
+
+    <head>
+        <title>Meu site</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        
+        <img src="Imagem/Flamengo.jpg" width="500" height="500">
+
+    </body>
+
+</html>
+
+----------------------------------------------------------------------------------------------------
+AULA LINKS
+
+<!doctype html> 
+
+<html>
+
+    <head>
+        <title>Página Principal</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        
+        <a href="">Home</a>
+        /
+        <a href="contato.html">Contato</a>
+
+        <h2>Página Principal</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices ac nibh sit amet venenatis.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices ac nibh sit amet venenatis.
+        </p>
+
+    </body>
+
+</html>
+
+-------------------------------------------------------------------------------------------------------
+AULA TABELAS 1
+
+<!doctype html> 
+
+<html>
+
+    <head>
+        <title>Página Principal</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <h2>Produtos</h2>
+        
+        <table border="3">
+
+            <tr>
+                <th>Codigo</th>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+
+            <tr>
+                <td>001</td>
+                <td>Notebook</td>
+                <td>R$ 2.500,00</td>
+            </tr>
+
+            <tr>
+                <td>002</td>
+                <td>TV SAMSUNG "50</td>
+                <td>R$ 4.500,00</td>
+            </tr>
+
+        </table>
+
+    </body>
+
+</html>
+------------------------------------------------------- AULA 2 TABELAS
+<!doctype html> 
+
+<html>
+
+    <head>
+        <title>Página Principal</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <h2>Produtos</h2>
+        
+        <table border="3" width="100%" height="1">
+
+            <tr>
+                <th>Codigo</th>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+
+            <tr>
+                <td>001</td>
+                <td>Notebook</td>
+                <td>R$ 2.500,00</td>
+            </tr>
+
+            <tr>
+                <td>002</td>
+                <td>TV SAMUSNG 4K</td>
+                <td>R$ 4.950,00</td>
+            </tr>
+
+            <tr>
+                <td>DNF</td>
+                <td><img src="Imagem/Flamengo.jpg" width="20" height="20"> FLAMENGO</td>
+                <td>NOT AVALIABLE</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Desconto</td>
+                <td colspan="2">CUPOM 1 -R$ 10,00</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">CUPOM 2 -R$ 12,00</td>
+            </tr>
+
+            <tr>
+                <td>Total:</td>
+                <td colspan="2">R$ 7.428,00</td>
+            </tr>
+
+        </table>
+
+    </body>
+
+</html>
+
+--------------------------------------------------------------------------
+AULA FORMULÁRIO 1
+
+<!doctype html> 
+
+<html>
+
+    <head>
+        <title>Página Principal</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <h2>Login</h2>
+       
+        <form>
+            Login:<br>
+            <input type="text" name="Login"><br>
+
+            Senha:<br>
+            <input type="password" name="Senha"><br>
+
+            <input type="submit" value="Entrar">
+
+        </form>
+        
+
+	<form>
+            <h2>Cadastre-se</h2>
+                Login:<br>
+                <input type="text" name="Login"><br>
+                <br>
+
+            Sexo:<br>
+            <input type="radio" name="Sexo" value="M"> Masculino<br>
+            <input type="radio" name="Sexo" value="F"> Feminino<br> 
+            <br>
+
+            Interesses:<br>
+            <input type="checkbox" name="Interesses"> Futebol<br>
+            <input type="checkbox" name="Interesses"> Cursos<br>
+            <input type="checkbox" name="Interesses"> Moda<br>
+            <br>
+
+            Estado:<br>
+            <select name="estado">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="MS">Mato Grosso do Sulk</option>
+                <option value="MG">Minas Gerais</option>
+            </select><br>
+            <br>
+
+            Observações: <br>
+            <textarea></textarea><br>
+            <br>
+            <input type="submit" value="Confirmar">
+    
+    </form>
+
+    </body>
+
+</html>
+
+------------------------------------------------------------------------------------------
+CARACTERES ESPECIAIS
+
+<!doctype html> 
+
+<html>
+
+    <head>
+        <title>Página Principal</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <h2>Caracteres Especiais</h2>
+       
+        &lt;p&gt;
+
+    </body>
+
+</html>

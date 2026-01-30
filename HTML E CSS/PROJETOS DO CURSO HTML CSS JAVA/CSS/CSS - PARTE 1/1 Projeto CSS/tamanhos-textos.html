@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Tamanhos-Textos</title>
+        <meta charset="utf-8">
+
+        <style type="text/css">
+            
+            div {
+                font-size: 60px;
+            }
+
+            .texto{
+                /*
+                px -> tamanhho fixo
+                % -> tamanho relativo ao tamanho padrão adotado pelos browsers - tamanho padrão = 16px
+                em -> tamanho relativo ao container pai
+                font-size: 100%;
+                */
+                font-size: 1em; /*equivale a quantas vezes do tamanho padrão do conteiner pai - neste caso é a div*/
+            }
+
+            .texto2{
+                font-size: 15px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div>
+            <p class="texto">Conteúdo</p>
+            <p class="texto2">Conteúdo 2</p>
+        </div>
+
+    </body>
+
+</html>
